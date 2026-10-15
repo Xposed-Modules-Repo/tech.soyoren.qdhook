@@ -1,0 +1,33 @@
+name: 功能建议
+description: 提出新功能或现有功能的改进建议
+title: "[功能建议] "
+body:
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已阅读 [使用说明](https://github.com/Xposed-Modules-Repo/tech.soyoren.qdhook#readme)，并搜索过现有 Issue，未找到相同建议。
+          required: true
+
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 使用场景
+      description: 在哪个页面、什么情况下遇到了什么不便？
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 希望如何改进
+      description: 描述期望的操作方式与效果。
+    validations:
+      required: true
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: 补充材料（可选）
+      description: 可补充截图、示意图或当前的替代方案；如与特定版本有关，请注明模块及起点版本。上传前遮盖个人信息。

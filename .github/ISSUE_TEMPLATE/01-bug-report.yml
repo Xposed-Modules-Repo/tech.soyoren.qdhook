@@ -1,0 +1,65 @@
+name: 问题反馈
+description: 反馈闪退、功能失效或界面异常
+title: "[问题反馈] "
+body:
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已阅读 [使用说明](https://github.com/Xposed-Modules-Repo/tech.soyoren.qdhook#readme) 和 [发行说明](https://github.com/Xposed-Modules-Repo/tech.soyoren.qdhook/releases)，并搜索过现有 Issue。
+          required: true
+
+  - type: input
+    id: module-version
+    attributes:
+      label: QDHook 版本
+      description: 请填写完整版本号。
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: 起点读书版本
+      description: 请填写完整版本号；如为改包或共存版，请一并说明。
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 使用环境
+      description: 填写手机型号、系统及框架版本；如有其他作用于起点的模块，请一并说明。
+      placeholder: |
+        手机型号：
+        Android / ROM 版本：
+        LSPosed 或其他框架的名称与版本：
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      description: 说明受影响的页面或功能，以及实际表现与预期的差异。
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 写明操作顺序和相关开关；偶发问题请说明触发场景与出现频率。
+      placeholder: |
+        1. 打开……
+        2. 点击……
+        3. 出现……
+    validations:
+      required: true
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: 补充材料（可选）
+      description: 可拖入截图、录屏或日志文件，也可补充停用模块后的对照结果。闪退请尽量提供发生时间及对应日志；上传前遮盖账号、Cookie、Token 等个人信息。
