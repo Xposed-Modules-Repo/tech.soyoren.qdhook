@@ -32,8 +32,8 @@
 | --- | --- |
 | Android | 15（SDK 35） |
 | 架构 | arm64-v8a |
-| KernelSU | 3.3.0 |
-| Zygisk Next | 1.5.1 |
+| KernelSU | 3.3.1 |
+| Zygisk Next | 1.5.2 |
 | LSPosed | 2.2.1（7912）|
 
 ## 使用方式
